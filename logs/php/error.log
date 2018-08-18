@@ -1,0 +1,9 @@
+[31-Jul-2018 00:13:31 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[31-Jul-2018 00:13:31 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[31-Jul-2018 00:13:32 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[31-Jul-2018 00:13:32 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[31-Jul-2018 00:13:33 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[31-Jul-2018 00:13:33 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[07-Aug-2018 23:58:22 UTC] PHP Warning:  sprintf(): Too few arguments in /app/public/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
+[07-Aug-2018 23:58:23 UTC] PHP Warning:  sprintf(): Too few arguments in /app/public/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
+[07-Aug-2018 23:58:28 UTC] PHP Warning:  sprintf(): Too few arguments in /app/public/wp-admin/includes/class-bulk-upgrader-skin.php on line 150

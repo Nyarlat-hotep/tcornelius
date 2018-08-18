@@ -12,3 +12,114 @@ Creating API v2 with WebPath:
 [APIv1] KEEPALIVE /api/v1/events
 [APIv1] KEEPALIVE /api/v1/events
 [APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "QhFk7-G1UzVEYaJQNLMEdrRwy5Tv-xvKww5bvfKmIoc=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "38ff3ec2daec",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Sat, 18 Aug 2018 23:20:01 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@local.tcornelius.com\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003ca5944201d03f80f05f1d30a881838f41@local.tcornelius.com\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id QhFk7-G1UzVEYaJQNLMEdrRwy5Tv-xvKww5bvfKmIoc=@mailhog.example; Sat, 18 Aug 2018 23:20:01 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@38ff3ec2daec\u003e"
+      ],
+      "Subject": [
+        "[local.tcornelius.com] Notice of Password Change"
+      ],
+      "To": [
+        "tcornelius@brownbagmarketing.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "651442127:class-phpmailer.php"
+      ]
+    },
+    "Body": "Hi tcornelius,\r\n\r\nThis notice confirms that your password was changed on local.tcornelius.com.\r\n\r\nIf you did not change your password, please contact the Site Administrator at\r\ntcornelius@brownbagmarketing.com\r\n\r\nThis email has been sent to tcornelius@brownbagmarketing.com\r\n\r\nRegards,\r\nAll at local.tcornelius.com\r\nhttp://local.tcornelius.com\r\n",
+    "Size": 788,
+    "MIME": null
+  },
+  "Created": "2018-08-18T23:20:01.478838526Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@38ff3ec2daec",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: tcornelius@brownbagmarketing.com\r\nSubject: [local.tcornelius.com] Notice of Password Change\r\nX-PHP-Originating-Script: 651442127:class-phpmailer.php\r\nDate: Sat, 18 Aug 2018 23:20:01 +0000\r\nFrom: WordPress \u003cwordpress@local.tcornelius.com\u003e\r\nMessage-ID: \u003ca5944201d03f80f05f1d30a881838f41@local.tcornelius.com\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHi tcornelius,\r\n\r\nThis notice confirms that your password was changed on local.tcornelius.com.\r\n\r\nIf you did not change your password, please contact the Site Administrator at\r\ntcornelius@brownbagmarketing.com\r\n\r\nThis email has been sent to tcornelius@brownbagmarketing.com\r\n\r\nRegards,\r\nAll at local.tcornelius.com\r\nhttp://local.tcornelius.com\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events

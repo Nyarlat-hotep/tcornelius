@@ -7,3 +7,74 @@
 [07-Aug-2018 23:58:22 UTC] PHP Warning:  sprintf(): Too few arguments in /app/public/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
 [07-Aug-2018 23:58:23 UTC] PHP Warning:  sprintf(): Too few arguments in /app/public/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
 [07-Aug-2018 23:58:28 UTC] PHP Warning:  sprintf(): Too few arguments in /app/public/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
+[18-Aug-2018 23:28:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on boolean in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php:101
+Stack trace:
+#0 /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php(88): Kale_Welcome_Page->setup_config()
+#1 /app/public/wp-content/themes/kale/welcome-page/welcome-page.php(227): Kale_Welcome_Page::init(Array)
+#2 /app/public/wp-content/themes/kale/functions.php(245): require('/app/public/wp-...')
+#3 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/index.php(10): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101
+[18-Aug-2018 23:29:05 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on boolean in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php:101
+Stack trace:
+#0 /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php(88): Kale_Welcome_Page->setup_config()
+#1 /app/public/wp-content/themes/kale/welcome-page/welcome-page.php(227): Kale_Welcome_Page::init(Array)
+#2 /app/public/wp-content/themes/kale/functions.php(245): require('/app/public/wp-...')
+#3 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/index.php(10): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101
+[18-Aug-2018 23:29:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on boolean in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php:101
+Stack trace:
+#0 /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php(88): Kale_Welcome_Page->setup_config()
+#1 /app/public/wp-content/themes/kale/welcome-page/welcome-page.php(227): Kale_Welcome_Page::init(Array)
+#2 /app/public/wp-content/themes/kale/functions.php(245): require('/app/public/wp-...')
+#3 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/index.php(10): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101
+[18-Aug-2018 23:32:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on boolean in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php:101
+Stack trace:
+#0 /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php(88): Kale_Welcome_Page->setup_config()
+#1 /app/public/wp-content/themes/kale/welcome-page/welcome-page.php(227): Kale_Welcome_Page::init(Array)
+#2 /app/public/wp-content/themes/kale/functions.php(245): require('/app/public/wp-...')
+#3 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin-ajax.php(22): require_once('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101
+[18-Aug-2018 23:32:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on boolean in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php:101
+Stack trace:
+#0 /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php(88): Kale_Welcome_Page->setup_config()
+#1 /app/public/wp-content/themes/kale/welcome-page/welcome-page.php(227): Kale_Welcome_Page::init(Array)
+#2 /app/public/wp-content/themes/kale/functions.php(245): require('/app/public/wp-...')
+#3 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/index.php(10): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101
+[18-Aug-2018 23:32:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on boolean in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php:101
+Stack trace:
+#0 /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php(88): Kale_Welcome_Page->setup_config()
+#1 /app/public/wp-content/themes/kale/welcome-page/welcome-page.php(227): Kale_Welcome_Page::init(Array)
+#2 /app/public/wp-content/themes/kale/functions.php(245): require('/app/public/wp-...')
+#3 /app/public/wp-settings.php(426): include('/app/public/wp-...')
+#4 /app/public/wp-config.php(86): require_once('/app/public/wp-...')
+#5 /app/public/wp-load.php(37): require_once('/app/public/wp-...')
+#6 /app/public/wp-admin/admin.php(31): require_once('/app/public/wp-...')
+#7 /app/public/wp-admin/index.php(10): require_once('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101

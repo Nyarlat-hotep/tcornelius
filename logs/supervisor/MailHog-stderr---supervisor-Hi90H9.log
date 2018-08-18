@@ -1,3 +1,65 @@
 2018/08/18 22:59:36 Using in-memory storage
 2018/08/18 22:59:36 Serving under http://:1080/
 2018/08/18 22:59:36 [SMTP] Binding to address: 0.0.0.0:1025
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Starting session
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Received 16 bytes: 'EHLO localhost\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: ESTABLISH] In ESTABLISH state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 21 bytes: '250-Hello localhost\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 16 bytes: '250-PIPELINING\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Received 35 bytes: 'MAIL FROM:<www-data@38ff3ec2daec>\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@38ff3ec2daec>
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@38ff3ec2daec>'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] In MAIL state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 37 bytes: '250 Sender www-data@38ff3ec2daec ok\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] In RCPT state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] Got RCPT command
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Received 6 bytes: 'DATA\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] Processing line: DATA
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] In RCPT state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: RCPT] Got DATA command, switching to DATA state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Received 793 bytes: 'To: tcornelius@brownbagmarketing.com\r\nSubject: [local.tcornelius.com] Notice of Password Change\r\nX-PHP-Originating-Script: 651442127:class-phpmailer.php\r\nDate: Sat, 18 Aug 2018 23:20:01 +0000\r\nFrom: WordPress <wordpress@local.tcornelius.com>\r\nMessage-ID: <a5944201d03f80f05f1d30a881838f41@local.tcornelius.com>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHi tcornelius,\r\n\r\nThis notice confirms that your password was changed on local.tcornelius.com.\r\n\r\nIf you did not change your password, please contact the Site Administrator at\r\ntcornelius@brownbagmarketing.com\r\n\r\nThis email has been sent to tcornelius@brownbagmarketing.com\r\n\r\nRegards,\r\nAll at local.tcornelius.com\r\nhttp://local.tcornelius.com\r\n\r\n.\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2018/08/18 23:20:01 Parsing Content from string: 'To: tcornelius@brownbagmarketing.com
+Subject: [local.tcornelius.com] Notice of Password Change
+X-PHP-Originating-Script: 651442127:class-phpmailer.php
+Date: Sat, 18 Aug 2018 23:20:01 +0000
+From: WordPress <wordpress@local.tcornelius.com>
+Message-ID: <a5944201d03f80f05f1d30a881838f41@local.tcornelius.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Hi tcornelius,
+
+This notice confirms that your password was changed on local.tcornelius.com.
+
+If you did not change your password, please contact the Site Administrator at
+tcornelius@brownbagmarketing.com
+
+This email has been sent to tcornelius@brownbagmarketing.com
+
+Regards,
+All at local.tcornelius.com
+http://local.tcornelius.com
+'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Storing message QhFk7-G1UzVEYaJQNLMEdrRwy5Tv-xvKww5bvfKmIoc=@mailhog.example
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 80 bytes: '250 Ok: queued as QhFk7-G1UzVEYaJQNLMEdrRwy5Tv-xvKww5bvfKmIoc=@mailhog.example\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Received 6 bytes: 'QUIT\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] Processing line: QUIT
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Sent 9 bytes: '221 Bye\r\n'
+2018/08/18 23:20:01 [SMTP 127.0.0.1:40962] Session ended

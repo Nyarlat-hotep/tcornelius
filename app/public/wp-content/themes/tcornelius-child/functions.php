@@ -12,6 +12,11 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+    function enqueue_load_fa() {
+    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css' );
+}   
+
 function load_child_stylesheet() {
     wp_enqueue_style('style', get_stylesheet_directory_uri() . '/css/style.css');
 }

@@ -78,3 +78,10 @@ Stack trace:
 #7 /app/public/wp-admin/index.php(10): require_once('/app/public/wp-...')
 #8 {main}
   thrown in /app/public/wp-content/themes/kale/welcome-page/class.welcomepage.php on line 101
+[19-Aug-2018 23:26:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_field_group_exists() in /app/public/wp-content/themes/tcornelius-child/page.php:76
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/tcornelius-child/page.php on line 76

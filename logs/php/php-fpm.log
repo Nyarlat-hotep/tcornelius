@@ -8,3 +8,5 @@
 [07-Aug-2018 23:52:34] NOTICE: ready to handle connections
 [18-Aug-2018 22:59:34] NOTICE: fpm is running, pid 8
 [18-Aug-2018 22:59:35] NOTICE: ready to handle connections
+[19-Aug-2018 00:04:31] WARNING: [pool www] child 275 exited on signal 9 (SIGKILL) after 2721.533920 seconds from start
+[19-Aug-2018 00:04:31] NOTICE: [pool www] child 309 started

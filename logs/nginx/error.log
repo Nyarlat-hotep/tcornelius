@@ -1,0 +1,1 @@
+2018/08/19 00:04:31 [error] 21#0: *721 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: site_domain, request: "POST /wp-admin/async-upload.php HTTP/1.0", upstream: "fastcgi://unix:/var/run/php-fpm.sock:", host: "local.tcornelius.com", referrer: "http://local.tcornelius.com/wp-admin/post.php?post=12&action=edit"

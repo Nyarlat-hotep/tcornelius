@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'sass' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'scss' ]
 2 info using npm@3.10.10
 3 info using node@v6.9.5
 4 verbose config Skipping project config: /Users/tcornelius/.npmrc. (matches userconfig)
@@ -7,7 +7,7 @@
 5 verbose stack     at Error (native)
 6 verbose cwd /Users/tcornelius/Local Sites/localtcorneliuscom
 7 error Darwin 17.7.0
-8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "sass"
+8 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "scss"
 9 error node v6.9.5
 10 error npm  v3.10.10
 11 error path /Users/tcornelius/package.json

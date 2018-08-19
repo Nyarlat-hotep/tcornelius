@@ -50,7 +50,7 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
 <div class="row two-columns">
     <!-- Main Column -->
     <?php if($kale_pages_sidebar == 1) { ?>
-    <div class="main-column <?php if($kale_sidebar_size == 0) { ?> col-md-8 <?php } else { ?> col-md-9 <?php } ?>">
+    <div class="main-column col-md-12">
     <?php } else { ?>
     <div class="main-column col-md-12">
     <?php } ?>
@@ -87,7 +87,7 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
     </div>
     <!-- /Main Column -->
 
-    <?php if($kale_pages_sidebar == 1)  get_sidebar();  ?>
+    
 
 </div>
 <!-- /Two Columns -->

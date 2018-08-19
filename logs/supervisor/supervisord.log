@@ -99,3 +99,13 @@
 2018-08-18 22:59:38,274 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2018-08-18 22:59:38,274 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2018-08-18 22:59:38,275 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-08-19 00:13:45,920 INFO exited: varnish-plugins-watcher (exit status 0; expected)
+2018-08-19 00:13:46,947 INFO spawned: 'varnish-plugins-watcher' with pid 316
+2018-08-19 00:13:47,153 INFO exited: varnish-plugins-watcher (exit status 0; not expected)
+2018-08-19 00:13:48,158 INFO spawned: 'varnish-plugins-watcher' with pid 318
+2018-08-19 00:13:48,371 INFO exited: varnish-plugins-watcher (exit status 0; not expected)
+2018-08-19 00:13:50,379 INFO spawned: 'varnish-plugins-watcher' with pid 320
+2018-08-19 00:13:50,534 INFO exited: varnish-plugins-watcher (exit status 0; not expected)
+2018-08-19 00:13:53,542 INFO spawned: 'varnish-plugins-watcher' with pid 322
+2018-08-19 00:13:53,728 INFO exited: varnish-plugins-watcher (exit status 0; not expected)
+2018-08-19 00:13:54,730 INFO gave up: varnish-plugins-watcher entered FATAL state, too many start retries too quickly

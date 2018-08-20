@@ -13,7 +13,7 @@
     }
 
     .navbar-default .navbar-nav>.active, .navbar-default .navbar-nav>.active:focus, .navbar-default .navbar-nav>.active:hover {
-        border-bottom: 3px solid rgb(119, 119, 119);
+        border-bottom: 3px solid #536976;
     }
 }
 
@@ -22,7 +22,66 @@
 }
 
 .footer {
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     .credit {
+        display: none;
+    }
+
+    a {
         color: #fff;
+        text-decoration: underline;
+
+        &:hover {
+            color: #536976;
+        }
+    }
+
+    span {
+        padding: 0 2rem;
+    }
+}
+
+
+// Bio Styles
+
+.bio {
+    padding: 2rem 2vw;
+    // background: rgb(0,190,154);
+    // background: linear-gradient(-90deg, rgba(0,190,154,1) 0%, rgba(0,255,117,1) 100%);
+
+    .bioImg {
+        max-width: 25vw;
+        border-right: 10px solid #536976;
+    }
+
+    h3, h1 {
+        text-transform: none;
+        font-size: 2rem;
+        color: #536976;
+        font-weight: 100;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    .skills {
+        margin-top: 6rem;
+    }
+
+    .skill {
+        text-align: center;
+    }
+
+    i {
+        font-size: 6rem;
+        color: #536976;
     }
 }

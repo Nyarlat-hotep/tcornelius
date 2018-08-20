@@ -8,10 +8,48 @@
   background-color: #f8f8f8; }
 
 .header .navbar-default .navbar-nav > .active, .header .navbar-default .navbar-nav > .active:focus, .header .navbar-default .navbar-nav > .active:hover {
-  border-bottom: 3px solid #777777; }
+  border-bottom: 3px solid #536976; }
 
 .entry-title {
   display: none; }
 
-.footer .credit {
-  color: #fff; }
+.footer {
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  background: #BBD2C5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #536976, #BBD2C5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #536976, #BBD2C5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .footer .credit {
+    display: none; }
+  .footer a {
+    color: #fff;
+    text-decoration: underline; }
+    .footer a:hover {
+      color: #536976; }
+  .footer span {
+    padding: 0 2rem; }
+
+.bio {
+  padding: 2rem 2vw; }
+  .bio .bioImg {
+    max-width: 25vw;
+    border-right: 10px solid #536976; }
+  .bio h3, .bio h1 {
+    text-transform: none;
+    font-size: 2rem;
+    color: #536976;
+    font-weight: 100; }
+  .bio h1 {
+    font-size: 4.5rem;
+    text-align: center; }
+  .bio .skills {
+    margin-top: 6rem; }
+  .bio .skill {
+    text-align: center; }
+  .bio i {
+    font-size: 6rem;
+    color: #536976; }

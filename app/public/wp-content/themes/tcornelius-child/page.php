@@ -73,41 +73,44 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
             <?php } ?>
 
             <!-- Bio Information -->
-            <div class="row two-columns">
-                <div class="col-md-6">
-                <?php if( get_field('image') ): ?>
-                    <div class="bioImg">
-                        <img src="<?php the_field('image'); ?>" />
+            <div class="bio">
+                <div class="row two-columns">
+                    <div class="col-md-4">
+                    <?php if( get_field('image') ): ?>
+                        <div class="bioImg">
+                            <img src="<?php the_field('image'); ?>" />
+                        </div>
+                    <?php endif; ?>
                     </div>
-                <?php endif; ?>
-                </div>
-                <div class="col-md-6">
-                    <div class="bioDesc">
-                        <h3><?php the_field('description'); ?></h3>
-                        <div class="row three-columns">
-                            <div class="col-md-4">
-                                <div class="skill-1">
-                                    <i class="fas fa-users"></i>
-                                    <h3>UX Designer</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="skill-1">
-                                    <i class="fas fa-laptop-code"></i>
-                                    <h3>Front-end Developer</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="skill-1">
-                                    <i class="fas fa-paint-brush"></i>
-                                    <h3>Artist</h3>
+                    <div class="col-md-8">
+                        <div class="bioDesc">
+                            <h1><?php the_field('description'); ?></h1>
+                            <div class="row three-columns">
+                                <div class="skills">
+                                    <div class="col-md-4">
+                                        <div class="skill-1 skill">
+                                            <i class="<?php the_field('skill-1-img'); ?>"></i>
+                                            <h3><?php the_field('skill-1-name'); ?></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="skill-2 skill">
+                                            <i class="<?php the_field('skill-2-img'); ?>"></i>
+                                            <h3><?php the_field('skill-2-name'); ?></h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="skill-3 skill">
+                                            <i class="<?php the_field('skill-3-img'); ?>"></i>
+                                            <h3><?php the_field('skill-3-name'); ?></h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                
             
             
             <div class="page-content"><?php the_content(); ?></div>

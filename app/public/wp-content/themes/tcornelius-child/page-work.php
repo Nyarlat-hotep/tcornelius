@@ -73,8 +73,36 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
             <?php } ?>
 
            
-            
-            
+            <!-- UX Gallery -->
+            <?php 
+                $args = array(
+                    'post_type' => 'ux_work',
+                    'orderby' => 'title',
+                    'order' => 'ASC',
+                    'posts_per_page'  => -1,
+                );
+
+                $the_query = new WP_Query( $args );
+
+            ?>    
+
+                <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+                    <div class="row">
+                        <div class="large-4 columns">
+                            <div class="ux-work-teaser">
+                                <h2 class="ux-work-teaser-headline"><?php the_title(); ?></h2>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endwhile; else: ?>
+
+                <?php endif; wp_reset_postdata(); ?>
+             
+            <!--  -->
+
+
             <div class="page-content"><?php the_content(); ?></div>
             
         </div>

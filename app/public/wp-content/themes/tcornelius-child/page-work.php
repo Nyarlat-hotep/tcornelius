@@ -72,7 +72,9 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
             <?php } ?>
             <?php } ?>
 
-           
+
+            <div class="page-content"><?php the_content(); ?></div>
+
             <!-- UX Gallery -->
             <?php 
                 $args = array(
@@ -87,23 +89,23 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
             ?>    
 
                 <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="large-4 columns">
+                        <div class="col-lg-4 col-md-4">
                             <div class="ux-work-teaser">
+                                <?php $post_link = get_field('button', false, false); ?>
                                 <h2 class="ux-work-teaser-headline"><?php the_title(); ?></h2>
+                                <img src="<?php the_field('thumbnail'); ?>">
+                                <a href="<?php echo get_the_permalink($post_link); ?>"><?php echo get_the_title($post_link); ?></a>
                             </div>
                         </div>
                     </div>
-
+                </div>
                 <?php endwhile; else: ?>
 
                 <?php endif; wp_reset_postdata(); ?>
              
             <!--  -->
-
-
-            <div class="page-content"><?php the_content(); ?></div>
             
         </div>
         <!-- /Page Content -->

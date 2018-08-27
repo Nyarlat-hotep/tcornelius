@@ -78,36 +78,52 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
             <!-- UX Gallery -->
             <?php 
                 $args = array(
-                    'post_type' => 'ux_work',
-                    'orderby' => 'title',
-                    'order' => 'ASC',
+                    'post_type'       => 'ux_work',
+                    'orderby'         => 'title',
+                    'order'           => 'ASC',
                     'posts_per_page'  => -1,
                 );
 
                 $the_query = new WP_Query( $args );
+            ?>
+            
+                <?php 
+                    $start_row = true;
+                    $counter   = 0;
+                ?>
 
-            ?>    
-
-                <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                 <div class="container-fluid">
+                <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                
+
+                <?php if ($start_row) {
+                    $start_row = false; ?>
                     <div class="row">
+                <?php } ?>
+                <?php $counter++; ?>    
                         <div class="col-lg-4 col-md-4">
                             <div class="ux-work-teaser">
                                 <?php $post_link = get_field('button', false, false); ?>
-                                <h2 class="ux-work-teaser-headline"><?php the_title(); ?></h2>
+                                <h2 class="ux-work-teaser-headline"><?php the_field('project_intro'); ?></h2>
                                 <img src="<?php the_field('thumbnail'); ?>">
-                                <a href="<?php echo get_the_permalink($post_link); ?>"><?php echo get_the_title($post_link); ?></a>
+                                <a role="button" class="btn btn-primary" href="<?php echo get_the_permalink($post_link); ?>">See Project</a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    
+                <?php if ($counter === 3) {
+                    $counter   = 0;
+                    $start_row = true; ?>
+                    </div> <!-- end row -->
+                <?php } ?>    
+                
                 <?php endwhile; else: ?>
 
                 <?php endif; wp_reset_postdata(); ?>
+                </div> <!-- end container fluid -->
              
             <!--  -->
             
-        </div>
+        
         <!-- /Page Content -->
         
         <!-- Page Comments -->

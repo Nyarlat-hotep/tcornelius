@@ -12,3 +12,7 @@
 [19-Aug-2018 00:04:31] NOTICE: [pool www] child 309 started
 [19-Aug-2018 23:05:59] WARNING: [pool www] child 16 exited on signal 9 (SIGKILL) after 74080.122953 seconds from start
 [19-Aug-2018 23:05:59] NOTICE: [pool www] child 338 started
+[27-Aug-2018 01:21:36] WARNING: [pool www] child 338 exited on signal 9 (SIGKILL) after 183753.883735 seconds from start
+[27-Aug-2018 01:21:36] NOTICE: [pool www] child 390 started
+[27-Aug-2018 01:21:48] WARNING: [pool www] child 14 exited on signal 9 (SIGKILL) after 257845.993778 seconds from start
+[27-Aug-2018 01:21:48] NOTICE: [pool www] child 391 started

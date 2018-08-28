@@ -85,3 +85,17 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/tcornelius-child/page.php on line 76
+[28-Aug-2018 00:53:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /app/public/wp-content/themes/tcornelius-child/single-ux_work.php:35
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/tcornelius-child/single-ux_work.php on line 35
+[28-Aug-2018 00:53:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /app/public/wp-content/themes/tcornelius-child/single-ux_work.php:35
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/tcornelius-child/single-ux_work.php on line 35

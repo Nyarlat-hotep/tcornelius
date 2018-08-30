@@ -32,7 +32,7 @@ $kale_posts_posts_nav_show = kale_get_option('kale_posts_posts_nav_show');
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="workHeroContainer" style="background-image: url(<?php the_field('thumbnail'); ?>);">
-                        <h1 class="entry-title"><?php the_field('project_intro'); ?></h1>
+                        <h1 class="ux-entry-title"><?php the_field('project_intro'); ?></h1>
                     </div>
                 </div>
             </div>
@@ -46,6 +46,45 @@ $kale_posts_posts_nav_show = kale_get_option('kale_posts_posts_nav_show');
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="uxProblem">
                         <?php the_field('project_solution'); ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <?php if (get_field('project_img_1')) { ?>
+                        <div class="additionalImg">
+                            <img src="<?php the_field('project_img_1'); ?>"/>
+                        </div>
+                    <?php } ?>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="additionalImg">
+                        <?php if (get_field('project_img_2')) { ?>
+                            <div class="additionalImg">
+                                <img src="<?php the_field('project_img_2'); ?>"/>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="additionalImg">
+                        <?php if (get_field('project_img_3')) { ?>
+                            <div class="additionalImg">
+                                <img src="<?php the_field('project_img_3'); ?>"/>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="next-project">
+                        <?php $post_link = get_field('next_project', false, false); ?>
+                        <a role="button" class="btn btn-primary" href="<?php echo get_the_permalink($post_link); ?>">View Next Project</a>
                     </div>
                 </div>
             </div>

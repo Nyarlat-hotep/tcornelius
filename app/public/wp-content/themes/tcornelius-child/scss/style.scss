@@ -90,3 +90,19 @@ h1, h2, h3, h4 {
         color: #536976;
     }
 }
+
+.gallery {
+
+    li {
+        display: inline;
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        img {
+            margin: 1rem;
+            border: 1px solid #000;
+        }
+    }
+}

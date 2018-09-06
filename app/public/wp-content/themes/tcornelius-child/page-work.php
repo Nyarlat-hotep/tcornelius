@@ -139,6 +139,7 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
     
 
 </div>
+</div>
 <!-- /Two Columns -->
 
 <?php endwhile; ?>

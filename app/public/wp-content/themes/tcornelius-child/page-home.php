@@ -88,22 +88,28 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
                             <div class="row three-columns">
                                 <div class="skills">
                                     <div class="col-md-4">
-                                        <div class="skill-1 skill">
-                                            <i class="<?php the_field('skill-1-img'); ?>"></i>
-                                            <h3><?php the_field('skill-1-name'); ?></h3>
-                                        </div>
+                                        <a href="/work">
+                                            <div class="skill-1 skill">
+                                                <i class="<?php the_field('skill-1-img'); ?>"></i>
+                                                <h3><?php the_field('skill-1-name'); ?></h3>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="skill-2 skill">
-                                            <i class="<?php the_field('skill-2-img'); ?>"></i>
-                                            <h3><?php the_field('skill-2-name'); ?></h3>
-                                        </div>
+                                        <a href="/coded-work">
+                                            <div class="skill-2 skill">
+                                                <i class="<?php the_field('skill-2-img'); ?>"></i>
+                                                <h3><?php the_field('skill-2-name'); ?></h3>
+                                            </div>
+                                        </a>    
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="skill-3 skill">
-                                            <i class="<?php the_field('skill-3-img'); ?>"></i>
-                                            <h3><?php the_field('skill-3-name'); ?></h3>
-                                        </div>
+                                        <a href="/visual-design">
+                                            <div class="skill-3 skill">
+                                                <i class="<?php the_field('skill-3-img'); ?>"></i>
+                                                <h3><?php the_field('skill-3-name'); ?></h3>
+                                            </div>
+                                        </a>    
                                     </div>
                                 </div>
                             </div>

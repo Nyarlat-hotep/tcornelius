@@ -57,3 +57,11 @@ h1, h2, h3, h4 {
   .bio i {
     font-size: 6rem;
     color: #536976; }
+
+.gallery li {
+  display: inline; }
+  .gallery li a:hover {
+    text-decoration: none; }
+  .gallery li img {
+    margin: 1rem;
+    border: 1px solid #000; }

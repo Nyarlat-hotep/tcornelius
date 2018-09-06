@@ -16,3 +16,11 @@
 [27-Aug-2018 01:21:36] NOTICE: [pool www] child 390 started
 [27-Aug-2018 01:21:48] WARNING: [pool www] child 14 exited on signal 9 (SIGKILL) after 257845.993778 seconds from start
 [27-Aug-2018 01:21:48] NOTICE: [pool www] child 391 started
+[31-Aug-2018 00:05:17] NOTICE: Terminating ...
+[31-Aug-2018 00:05:17] NOTICE: exiting, bye-bye!
+[31-Aug-2018 00:05:21] NOTICE: fpm is running, pid 20
+[31-Aug-2018 00:05:21] NOTICE: ready to handle connections
+[03-Sep-2018 19:49:15] NOTICE: fpm is running, pid 8
+[03-Sep-2018 19:49:15] NOTICE: ready to handle connections
+[05-Sep-2018 20:50:48] NOTICE: fpm is running, pid 8
+[05-Sep-2018 20:50:48] NOTICE: ready to handle connections

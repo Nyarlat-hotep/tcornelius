@@ -1,7 +1,7 @@
 <?php
 function my_theme_enqueue_styles() {
 
-    $parent_style = 'kale-customizer'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
+    $parent_style = 'kale-customizer'; // This is 'kale' for the Kale theme.
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style',
@@ -21,4 +21,15 @@ function load_child_stylesheet() {
     wp_enqueue_style('style', get_stylesheet_directory_uri() . '/css/style.css');
 }
 add_action('wp_enqueue_scripts', 'load_child_stylesheet');
+
+
+function my_scripts_method() {
+    wp_enqueue_script(
+        'custom-script',
+        get_stylesheet_directory_uri() . '/js/custom_script.js',
+        array( 'jquery' )
+    );
+}
+
+add_action( 'wp_enqueue_scripts', 'my_scripts_method' );
 ?>

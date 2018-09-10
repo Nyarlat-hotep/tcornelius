@@ -98,15 +98,17 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
 
                 <?php if ($start_row) {
                     $start_row = false; ?>
-                    <div class="row">
+                    <div class="row row-eq-height">
                 <?php } ?>
                 <?php $counter++; ?>    
                         <div class="col-lg-4 col-md-4">
-                            <div class="ux-work-teaser">
+                            <div class="ux-work-teaser <?php echo get_post_field('post_name'); ?>">
                                 <?php $post_link = get_field('button', false, false); ?>
                                 <h2 class="ux-work-teaser-headline"><?php the_field('project_intro'); ?></h2>
-                                <img src="<?php the_field('thumbnail'); ?>">
-                                <a role="button" class="btn btn-primary" href="<?php echo get_the_permalink($post_link); ?>">See Project</a>
+                                <div class="work-img-container">
+                                    <img src="<?php the_field('thumbnail'); ?>">
+                                </div>
+                                <a role="button" class="btn btn-primary work-btn" href="<?php echo get_the_permalink($post_link); ?>">See Project</a>
                             </div>
                         </div>
                     
@@ -138,7 +140,7 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
 
     
 
-</div>
+    </div>
 </div>
 <!-- /Two Columns -->
 

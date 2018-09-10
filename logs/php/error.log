@@ -104,3 +104,19 @@ Stack trace:
 [31-Aug-2018 00:05:09 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
 [31-Aug-2018 00:05:09 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
 [31-Aug-2018 00:05:20 UTC] PHP Notice:  Undefined index: SERVER_SOFTWARE in phar:///usr/local/bin/wp/php/WP_CLI/Runner.php(1020) : eval()'d code on line 75
+[09-Sep-2018 23:15:28 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_post_field(), 0 passed in /app/public/wp-content/themes/tcornelius-child/page-work.php on line 105 and at least 1 expected in /app/public/wp-includes/post.php:654
+Stack trace:
+#0 /app/public/wp-content/themes/tcornelius-child/page-work.php(105): get_post_field()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-includes/post.php on line 654
+[09-Sep-2018 23:15:46 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_post_field(), 0 passed in /app/public/wp-content/themes/tcornelius-child/page-work.php on line 105 and at least 1 expected in /app/public/wp-includes/post.php:654
+Stack trace:
+#0 /app/public/wp-content/themes/tcornelius-child/page-work.php(105): get_post_field()
+#1 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#2 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#3 /app/public/index.php(17): require('/app/public/wp-...')
+#4 {main}
+  thrown in /app/public/wp-includes/post.php on line 654

@@ -1,3 +1,9 @@
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 h1, h2, h3, h4 {
   font-weight: 100 !important;
   text-transform: none !important; }
@@ -65,3 +71,35 @@ h1, h2, h3, h4 {
   .gallery li img {
     margin: 1rem;
     border: 1px solid #000; }
+
+.ux-work-teaser {
+  height: 300px;
+  overflow: hidden;
+  text-align: center; }
+  .ux-work-teaser h2 {
+    opacity: 0;
+    text-align: center;
+    color: #fff; }
+  .ux-work-teaser .work-btn {
+    position: relative;
+    top: 3rem;
+    transition: .25s; }
+
+.work-hover {
+  transition: .25s; }
+  .work-hover h2 {
+    opacity: 1;
+    transition: .25s;
+    position: relative;
+    z-index: 2; }
+  .work-hover:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #000;
+    opacity: .7; }
+  .work-hover .work-btn {
+    top: -5rem; }

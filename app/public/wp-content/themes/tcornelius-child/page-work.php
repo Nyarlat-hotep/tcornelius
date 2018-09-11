@@ -105,9 +105,6 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
                             <div class="ux-work-teaser <?php echo get_post_field('post_name'); ?>" style="background: url(<?php the_field('thumbnail'); ?>);">
                                 <?php $post_link = get_field('button', false, false); ?>
                                 <h2 class="ux-work-teaser-headline"><?php the_field('project_intro'); ?></h2>
-                                <!-- <div class="work-img-container">
-                                    <img src="<?php the_field('thumbnail'); ?>">
-                                </div> -->
                                 <a role="button" class="btn btn-primary work-btn" href="<?php echo get_the_permalink($post_link); ?>">See Project</a>
                             </div>
                         </div>

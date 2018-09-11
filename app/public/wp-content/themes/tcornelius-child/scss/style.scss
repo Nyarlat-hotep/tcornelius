@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
 h1, h2, h3, h4 {
     font-weight: 100 !important;
     text-transform: none !important;
@@ -55,10 +61,20 @@ h1, h2, h3, h4 {
 
 // Bio Styles
 
+.home-page {
+    padding-top: 3rem;
+
+    p {
+        font-size: 24px;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+}
+
 .bio {
-    padding: 2rem 2vw;
-    // background: rgb(0,190,154);
-    // background: linear-gradient(-90deg, rgba(0,190,154,1) 0%, rgba(0,255,117,1) 100%);
+    padding: 2rem 0;
 
     .bioImg {
         max-width: 25vw;
@@ -180,13 +196,20 @@ h1, h2, h3, h4 {
     background-size: 125% !important;
 }
 
+.code-work-teaser-img {
+    height: 25vh;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 0 !important;
+}
+
 
 @media only screen and (min-width: 992px) {
     .row-eq-height {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display:         flex;
+        display:  flex;
         margin-bottom: 30px;
       }
 }

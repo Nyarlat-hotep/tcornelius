@@ -72,59 +72,57 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
             <?php } ?>
             <?php } ?>
 
-            <!-- Bio Information -->
-            <div class="bio">
-                <div class="row two-columns">
-                    <div class="col-md-4">
-                    <?php if( get_field('image') ): ?>
-                        <div class="bioImg">
-                            <img src="<?php the_field('image'); ?>" />
-                        </div>
-                    <?php endif; ?>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="bioDesc">
-                            <h1><?php the_field('description'); ?></h1>
-                            <div class="row three-columns">
-                                <div class="skills">
-                                    <div class="col-md-4">
-                                        <a href="/work">
-                                            <div class="skill-1 skill">
-                                                <i class="<?php the_field('skill-1-img'); ?>"></i>
-                                                <h3><?php the_field('skill-1-name'); ?></h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="/coded-work">
-                                            <div class="skill-2 skill">
-                                                <i class="<?php the_field('skill-2-img'); ?>"></i>
-                                                <h3><?php the_field('skill-2-name'); ?></h3>
-                                            </div>
-                                        </a>    
-                                    </div>
-                                    <div class="col-md-4">
-                                        <a href="/visual-design">
-                                            <div class="skill-3 skill">
-                                                <i class="<?php the_field('skill-3-img'); ?>"></i>
-                                                <h3><?php the_field('skill-3-name'); ?></h3>
-                                            </div>
-                                        </a>    
-                                    </div>
-                                </div>
+
+            <div class="page-content"><?php the_content(); ?></div>
+
+            <!-- UX Gallery -->
+            <?php 
+                $args = array(
+                    'post_type'       => 'coded_work',
+                    'orderby'         => 'title',
+                    'order'           => 'ASC',
+                    'posts_per_page'  => -1,
+                );
+
+                $the_query = new WP_Query( $args );
+            ?>
+            
+                <?php 
+                    $start_row = true;
+                    $counter   = 0;
+                ?>
+
+                <div class="container-fluid">
+                <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                
+
+                <?php if ($start_row) {
+                    $start_row = false; ?>
+                    <div class="row row-eq-height">
+                <?php } ?>
+                <?php $counter++; ?>    
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="code-work-teaser <?php echo get_post_field('post_name'); ?>" style="background: url(<?php the_field('thumbnail'); ?>);">
+                                <a href="<?php echo the_field('work_link'); ?>" target="_blank">
+                                    <div class="code-work-teaser-img" style="background: url(<?php the_field('code_example'); ?>);"></div>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    
+                <?php if ($counter === 3) {
+                    $counter   = 0;
+                    $start_row = true; ?>
+                    </div> <!-- end row -->
+                <?php } ?>    
+                
+                <?php endwhile; else: ?>
+
+                <?php endif; wp_reset_postdata(); ?>
+                </div> <!-- end container fluid -->
+             
+            <!--  -->
             
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="page-content home-page"><?php the_content(); ?></div>
-                </div>
-            </div>
-            
-        </div>
+        
         <!-- /Page Content -->
         
         <!-- Page Comments -->
@@ -139,6 +137,7 @@ if($kale_pages_featured_image_show == 'Banner' && has_post_thumbnail()) {
 
     
 
+    <!-- </div> -->
 </div>
 <!-- /Two Columns -->
 
